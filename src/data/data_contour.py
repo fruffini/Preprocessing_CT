@@ -53,7 +53,7 @@ def elaborate_patient_volume(patient_dir, cfg, dataset=util_datasets.BaseDataset
             ds = pydicom.dcmread(dicom_files[0])
 
             # Select id_patient
-            patient_fname = dataset.get_IDpatient(ds=ds, patient_dir=patient_dir)
+            patient_fname = dataset.get_ID_patient(ds=ds, patient_dir=patient_dir)
 
             # Create the patient directory for masks
 

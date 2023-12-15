@@ -1,0 +1,48 @@
+seed: 0
+exp_name:
+
+device:
+  cuda_device: cuda:0
+  gpu_num_workers: 32
+
+data:
+  dataset_name: PCR
+  img_dir: /data/raw/PCR #  Metti il path dei dati qui (EX: /Volumes/T7/<TAC DIRECTORY>/)
+  interim_dir: /data/interim/
+  processed_dir: /data/processed/
+  label_file: /data/raw/PCR/DATABASEV1.xls
+  metadata_file: None
+  clinical_data:
+    information: None
+    "no_rc": 0
+    "rc": 1
+  preprocessing:
+    # resize
+    img_size: 512
+    # normalization and clip
+    range:
+      min: -1000 # -1200 # -1000
+      max: 1000 # 400 # 1000
+  dicom_tags:
+    - PatientID
+    - PatientName
+    - SliceThickness
+    - RescaleIntercept
+    - RescaleSlope
+    - PixelSpacing
+    - BitsAllocated
+    - BitsStored
+    - PixelRepresentation
+    - ImageOrientationPatient
+    - ImagePositionPatient
+    - ImageType
+    - Manufacturer
+    - ManufacturerModelName
+    - PhotometricInterpretation
+    - WindowCenter
+    - WindowWidth
+  contour:
+    contour_type: CTV
+    contour_save_format: .nii
+    masks_target: ['Lungs','Lesions']
+    union_target: ['Lesions_Lungs']

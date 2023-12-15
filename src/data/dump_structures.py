@@ -58,7 +58,6 @@ if __name__ == '__main__':
 
                 # Get structures
                 patient_fname = getattr(ds_seg, 'PatientID', None)
-                # TODO add patient_fname to the dataset Labels and remove patient names
                 structures, rois_classes = Dataset_class.get_structures_names(ds_seg).get_structures_and_classes()
 
 

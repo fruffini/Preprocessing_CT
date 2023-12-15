@@ -1,1 +1,5 @@
 /env/
+/data/
+
+weights
+/weights/

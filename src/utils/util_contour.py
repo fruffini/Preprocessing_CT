@@ -136,7 +136,7 @@ def get_slices_and_masks(ds_seg, roi_names=[], slices_dir=str, dataset=None):
         img_voxel.append(img_array)
         dataset.set_shape(img_array.shape)
         # Get voxel-by-Rois dictionary
-        Img_SOPInstanceUID, Img_Filename = dataset.get_SOP_FILENAME(img_id=img_id)
+        Img_SOPInstanceUID, Img_Filename = dataset.get_SOP_and_Filename(img_id=img_id)
         if len(roi_names) == 0:
             voxel_by_rois = None
         else:

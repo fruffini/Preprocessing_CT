@@ -1,0 +1,23 @@
+name: ct_env
+channels:
+- defaults
+dependencies:
+- python == 3.10
+- pip
+- pip:
+  - torch
+  - torchvision
+  - torchaudio
+  - numpy
+  - matplotlib
+  - pandas
+  - openpyxl
+  - tqdm
+  - scikit-learn
+  - pyyaml
+  - pydicom
+  - dicom2nifti
+  - SimpleITK
+  - nilearn
+  - xlrd
+  

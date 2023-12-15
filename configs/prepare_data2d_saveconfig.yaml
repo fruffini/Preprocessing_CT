@@ -1,0 +1,4 @@
+mode:
+  2d:
+    save_volume: True
+    interpolate_v: False

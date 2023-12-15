@@ -1,5 +1,4 @@
 import sys
-
 from pandarallel import pandarallel
 
 from src.utils.util_datasets import BaseDataset
@@ -53,7 +52,7 @@ def saveCT(patient_dir, cfg, dataset):
             ds = pydicom.dcmread(dicom_files[0])
 
             # Select id_patient
-            patient_fname = dataset.get_IDpatient(ds=ds, patient_dir=patient_dir)
+            patient_fname = dataset.get_ID_patient(ds=ds, patient_dir=patient_dir)
             # Check mask directory:
             Dataset_class.check_mask_dir(patient_id=patient_fname)
 

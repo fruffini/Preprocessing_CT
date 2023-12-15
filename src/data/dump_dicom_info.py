@@ -17,7 +17,7 @@ from tqdm import tqdm
 import argparse
 argparser = argparse.ArgumentParser(description='Prepare data for training')
 argparser.add_argument('-c', '--config',
-                       help='configuration file path', default='./configs/prepare_data2d_RG.yaml')
+                       help='configuration file path', default='./configs/prepare_data2d_PCR.yaml')
 args = argparser.parse_args()
 
 
@@ -31,15 +31,10 @@ if __name__ == '__main__':
     with open(args.config) as file:
         cfg = yaml.load(file, Loader=yaml.FullLoader)
 
+    #  Dataset Class Selector and class pointer
     dataset_name = cfg['data']['dataset_name']
-    # Dataset Class Selector
     dataset_class_selector = {
-        'NSCLC-RadioGenomics': util_datasets.NSCLCRadioGenomics,
-        'AERTS': util_datasets.AERTS,
-        'RC': util_datasets.RECO,
-        'Claro_Retro': util_datasets.ClaroRetrospective,
-        'Claro_Pro': util_datasets.ClaroProspective}
-
+        'PCR': util_datasets.RECO}
 
     # Initialize dataset class
     Dataset_class = dataset_class_selector[dataset_name](cfg=cfg)
