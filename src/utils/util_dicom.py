@@ -1,15 +1,8 @@
 import pydicom as dicom
 import numpy as np
 from pydicom.errors import InvalidDicomError
-from scipy.sparse import csc_matrix
-import matplotlib.pyplot as plt
-import scipy.ndimage as scn
 from collections import defaultdict
-import os
-import shutil
 import operator
-import warnings
-import math
 
 
 # https://github.com/KeremTurgutlu/dicom-contour/blob/master/dicom_contour/contour.py
@@ -159,11 +152,9 @@ def create_mask_dict(contour_datasets, path, **kwargs):
     Return:
         img_contours_dict (dict): img_id : contour array pairs
     """
-
-    from collections import defaultdict
-
     # create empty dict for
     img_contours_dict = defaultdict(int)
+
 
     for cdataset in contour_datasets:
         coords, img_id, shape = contour2poly(cdataset, path, **kwargs)
@@ -186,7 +177,6 @@ def slice_order(path, dataset):
     slices_dict = dataset.get_slices_dict(slices_dir=path)
     ordered_slices = sorted(slices_dict.items(), key=operator.itemgetter(1))
     dataset.set_slices_dict(ordered_slices)
-
     return ordered_slices
 
 

@@ -109,22 +109,24 @@ def get_slices_and_masks(ds_seg, roi_names=[], slices_dir=str, dataset=None):
     :param roi_names: list of the roi names to extract, if roi_names is empty, no roi will be extracted
     :param dataset_name: name of the dataset
     :return: img_voxel: img_voxel: list of all the array slices,
-             metadatas: ordered list of the dicom metadata,
+                metadatas: list of all the dicom metadata,
              voxel_by_rois: dictionary of the ordered mask voxel for each roi
     """
 
     slice_orders = util_dicom.slice_order(slices_dir, dataset)
+
     # Load slices :
     img_voxel = []
     metadatas = []
-
+    # CREATE voxel-by-Rois dictionary
     voxel_by_rois = {name: [] for name in roi_names}
-    voxel_by_rois_ids = dataset.create_voxels_by_rois(ds_seg, roi_names, slices_dir, number_of_slices=len(slice_orders)).get_voxel_by_rois()
+    voxel_by_rois_ids = dataset.create_voxels_by_rois(ds_seg, roi_names, slices_dir).get_voxel_by_rois()
     # REMOVE ANY NULL ROI
     for roi_name, volume in voxel_by_rois_ids.items():
         if len(volume) == 0:
             voxel_by_rois.pop(roi_name)
     roi_names = list(voxel_by_rois.keys())
+    # LOAD SLICES
     for img_id, _ in slice_orders:
         # Load the image dcm
 
