@@ -168,8 +168,7 @@ if __name__ == '__main__':
 
 
     # Parallelize the elaboration of each patient
-    # CC19026796, CC19004775
-    elaborate_patient_volume(patients_list[51], cfg=cfg, dataset=Dataset_class) # For debugging
-    #pd.Series(patients_list).parallel_apply(elaborate_patient_volume, cfg=cfg, dataset=Dataset_class)
+    elaborate_patient_volume(patients_list[0], cfg=cfg, dataset=Dataset_class) # DEBUG ONLY
+    #pd.Series(patients_list).parallel_apply(elaborate_patient_volume, cfg=cfg, dataset=Dataset_class) # UNCOMMENT THIS TO PROCESS ALL THE DATA
 
     print("May the force be with you")

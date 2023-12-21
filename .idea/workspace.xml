@@ -4,24 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b90d829b-26f3-416d-a238-c46535d84a91" name="Changes" comment="Commit Modifications and COmments">
-      <change afterPath="$PROJECT_DIR$/.idea/Preprocessing_CT.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements/requirements.txt" afterDir="false" />
+    <list default="true" id="b90d829b-26f3-416d-a238-c46535d84a91" name="Changes" comment="[Comments] some instructions and new reorganization">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configs/prepare_data2d_PCR.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/prepare_data2d_PCR.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements/environment.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/data_contour.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/data_contour.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/dump_dicom_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dump_dicom_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/dump_stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dump_stats.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/dump_structures.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dump_structures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/data_tool2d.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/data_tool2d.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/util_contour.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/util_contour.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/util_datasets.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/util_datasets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/util_dicom.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/util_dicom.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,22 +34,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/filruff/Documents/GitHub/Preprocessing_CT/data/raw",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/filruff/Documents/GitHub/Preprocessing_CT/data/raw&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data/raw" />
@@ -72,7 +61,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.data_contour">
+  <component name="RunManager" selected="Python.data_tool2d">
     <configuration name="data_contour" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Preprocessing_CT" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,6 +76,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/data/data_contour.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="data_tool2d" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Preprocessing_CT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/data/data_tool2d.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,6 +173,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.data_tool2d" />
       <item itemvalue="Python.data_contour" />
       <item itemvalue="Python.dump_stats" />
       <item itemvalue="Python.dump_structures" />
@@ -169,6 +181,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.data_tool2d" />
         <item itemvalue="Python.data_contour" />
         <item itemvalue="Python.dump_stats" />
         <item itemvalue="Python.dump_structures" />
@@ -190,7 +203,11 @@
       <workItem from="1702627732928" duration="1993000" />
       <workItem from="1702629821233" duration="4408000" />
       <workItem from="1702638291140" duration="1603000" />
-      <workItem from="1703064260343" duration="9013000" />
+      <workItem from="1703064260343" duration="11218000" />
+      <workItem from="1703127362210" duration="609000" />
+      <workItem from="1703128288682" duration="178000" />
+      <workItem from="1703138279777" duration="8218000" />
+      <workItem from="1703158074860" duration="595000" />
     </task>
     <task id="LOCAL-00001" summary="Commit utility">
       <option name="closed" value="true" />
@@ -224,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702632008587</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[Comments] some instructions and new reorganization">
+      <option name="closed" value="true" />
+      <created>1703076756831</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703076756831</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,14 +272,15 @@
     <MESSAGE value="Commit data directory" />
     <MESSAGE value="Commit Segmentation Lung Models" />
     <MESSAGE value="Commit Modifications and COmments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit Modifications and COmments" />
+    <MESSAGE value="[Comments] some instructions and new reorganization" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Comments] some instructions and new reorganization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/utils/util_datasets.py</url>
-          <line>308</line>
+          <line>307</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -268,15 +294,21 @@
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/utils/util_datasets.py</url>
-          <line>352</line>
-          <option name="timeStamp" value="26" />
+          <url>file://$PROJECT_DIR$/src/data/data_tool2d.py</url>
+          <line>276</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/data/data_tool2d.py</url>
+          <line>232</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Preprocessing_CT$data_contour.coverage" NAME="data_contour Coverage Results" MODIFIED="1703076036720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/data" />
+    <SUITE FILE_PATH="coverage/Preprocessing_CT$data_tool2d.coverage" NAME="data_tool2d Coverage Results" MODIFIED="1703151036298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/data" />
+    <SUITE FILE_PATH="coverage/Preprocessing_CT$data_contour.coverage" NAME="data_contour Coverage Results" MODIFIED="1703148639117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/data" />
     <SUITE FILE_PATH="coverage/Preprocessing_CT$dump_dicom_info.coverage" NAME="dump_dicom_info Coverage Results" MODIFIED="1703067318058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/data" />
     <SUITE FILE_PATH="coverage/Preprocessing_CT$dump_stats.coverage" NAME="dump_stats Coverage Results" MODIFIED="1703075236433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/data" />
     <SUITE FILE_PATH="coverage/Preprocessing_CT$dump_structures.coverage" NAME="dump_structures Coverage Results" MODIFIED="1703072888279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/data" />

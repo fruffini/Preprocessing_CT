@@ -263,7 +263,6 @@ class BaseDataset(object):
         self.dicom_info.to_excel(os.path.join(self.interim_dir, 'patients_info.xlsx'), index=False)
 
 
-
     def initialize_rois(self):
         """
         This function initializes the rois_name_dict attribute
@@ -326,6 +325,9 @@ class BaseDataset(object):
         return data, ds
 
     def check_mask_dir(self, patient_id):
+        """
+        This function checks if the mask directory for the patient_id exists
+        """
         if not os.path.exists(os.path.join(self.mask_dir, patient_id)):
             raise Exception(f"Mask directory for patient {patient_id} not found")
 

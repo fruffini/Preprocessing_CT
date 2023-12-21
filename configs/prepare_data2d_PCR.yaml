@@ -45,5 +45,5 @@ data:
   contour:
     contour_type: CTV
     contour_save_format: .nii
-    masks_target: ['Lungs','CTV', 'PTV']
+    masks_target: ['Lungs','CTV', 'PTV', 'Body']
     union_target: []

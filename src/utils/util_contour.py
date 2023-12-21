@@ -211,8 +211,9 @@ def get_bounding_boxes(volume, z_index=2):
 
 
 def get_maximum_bbox_over_slices(list_bboxes):
+
     return [int(np.min([bbox[0] for bbox in list_bboxes])), int(np.min([bbox[1] for bbox in list_bboxes])), int(np.max([bbox[2] for bbox in list_bboxes])),
-            int(np.max([bbox[3] for bbox in list_bboxes]))]
+            int(np.max([bbox[3] for bbox in list_bboxes]))] if len(list_bboxes) > 0 else [0, 0, 0, 0]
 
 
 def create_mask_with_largest_contours(image, number_of_contours=1):
